@@ -1,0 +1,74 @@
+// Place all the styles related to the purchases controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$cWhite: white;
+
+html {
+  box-sizing: border-box;
+}
+
+.warapper {
+  width: 100%;
+  height: 100%;
+
+  & header {
+    width: 100%;
+    height: 50px;
+    padding: 25px 20px;
+    border-bottom: solid 1px rgba(0,0,0,0.1);
+    background-color: $cWhite;
+    
+  
+
+    
+
+    & .header-main-list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+
+      & .fa-database {
+        font-size: 27px;
+        margin-left: 24px;
+        color: green;
+      }
+
+      & .reserch-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        list-style: none;
+        margin-left: 20px;
+
+        & .fa-chart-bar {
+          font-size: 27px;
+          margin-bottom: 6px;
+        }
+
+        & .reserch {
+          font-size: 13px;
+          color: #555555;
+        }
+        
+      }
+
+      & .title {
+        color: green;
+        font-size: 30px;
+        margin: 0 10px;
+      }
+
+      & .separator {
+        background-color: #e9edf4;
+        width: 1px;
+        height: 74px;
+      }
+    }
+  }
+
+  & .main-contents {
+    width: 100%;
+    height: 100vh;
+    background-color: #FAFAFA;
+  }
+}
