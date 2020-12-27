@@ -15,5 +15,10 @@
     </ul>
   </header>
   <div class="main-contents">
+    <div class="main-form">
+      <%= form_with model: @purchase , local: true do |form| %>
+        <%= form.text_fild :text %>
+      <%end%>
+    </div>
   </div>
 </div>
