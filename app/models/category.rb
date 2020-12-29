@@ -12,6 +12,7 @@ class Category < ActiveHash::Base
    
   # アソシエーション
    include ActiveHash::Associations
-   has_many :purchases
+  #  has_many :purchases
+  #  has_many_active_hash :purchases
  
 end

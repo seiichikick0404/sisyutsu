@@ -17,6 +17,9 @@
   <div class="main-container">
     <div class="main-contents">
       <div class="main-form">
+        <%= form_with model: @purchase, local: true do |f| %>
+          <%= f.text_field :text %>
+        <% end %>
       </div>
     </div>
   </div>
