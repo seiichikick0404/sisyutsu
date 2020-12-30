@@ -19,8 +19,10 @@
       <div class="main-form">
         <%= form_with model: @purchase, local: true do |f| %>
           <%= f.text_field :text %>
+          <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {} ) %>
+          <%= f.text_field :praice %>
         <% end %>
       </div>
     </div>
   </div>
-</div>
+</div>お
