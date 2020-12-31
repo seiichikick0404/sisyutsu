@@ -21,6 +21,7 @@
           <%= f.text_field :text %>
           <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {} ) %>
           <%= f.text_field :praice %>
+          <%= f.submit value: "送信" %>
         <% end %>
       </div>
     </div>
