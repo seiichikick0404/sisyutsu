@@ -17,13 +17,13 @@
   <div class="main-container">
     <div class="main-contents">
       <div class="main-form">
-        <%= form_with model: @purchase, local: true do |f| %>
+        <%= form_with model: Purchase, local: true do |f| %>
           <%= f.text_field :text %>
           <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {} ) %>
-          <%= f.text_field :praice %>
-          <%= f.submit value: "送信" %>
+          <%= f.text_field :price %>
+          <%= f.submit "送信" %>
         <% end %>
       </div>
     </div>
   </div>
-</div>お
+</div>
