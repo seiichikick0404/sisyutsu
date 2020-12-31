@@ -9,10 +9,5 @@ class Category < ActiveHash::Base
     { id: 7, name: '住まい' },
     { id: 8, name: 'その他雑費' }
   ]
-   
-  # アソシエーション
-   include ActiveHash::Associations
-  #  has_many :purchases
-  #  has_many_active_hash :purchases
  
 end
