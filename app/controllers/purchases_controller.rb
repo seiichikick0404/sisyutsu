@@ -16,3 +16,4 @@ class PurchasesController < ApplicationController
     params.require(:purchase).permit(:text, :category_id,:price)
   end
 end
+
