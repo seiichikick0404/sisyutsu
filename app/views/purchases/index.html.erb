@@ -17,6 +17,10 @@
   <div class="main-container">
     <div class="main-contents">
       <div class="main-form">
+        <h1 class="form-title">支出を入力</h1>
+        <p class="form-name-item">品目名</p>
+        <p class="form-name-category">カテゴリー</p>
+        <p class="form-name-price">金額</p>
         <%= form_with model: Purchase, local: true do |f| %>
           <%= f.text_field :text %>
           <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {} ) %>
