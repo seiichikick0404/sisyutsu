@@ -71,7 +71,8 @@ html {
     height: 100vh;
     background-color: #FAFAFA;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     & .main-form {
       position: relative;
@@ -105,6 +106,20 @@ html {
         height: 36px;
       }
       
+    }
+   
+    & .result-form {
+      width: 800px;
+      height: 600px;
+      background-color: $cWhite;
+      margin-top: 50px;
+      border-radius: 10px;
+
+      & .result-title {
+        margin: 28px 0 0 18px;
+        font-size: 28px;
+
+      }
     }
   } 
 }
