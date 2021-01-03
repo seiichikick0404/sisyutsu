@@ -21,8 +21,8 @@ class PurchasesController < ApplicationController
           @purchase_month += purchase[:price]
         end
       end
-      
-
+    
+      @balance_money = 200000 - @purchase_month   #給与の残額を取得
   end
 
   def create
