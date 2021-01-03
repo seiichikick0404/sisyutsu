@@ -13,6 +13,14 @@ class PurchasesController < ApplicationController
             @purchase_week += purchase[:price] 
         end
       end
+    
+    @purchase_month = 0
+    this_month = Date.today.all_month # all_monthをDate.todayに適用すると、今月の年月日データを取得できる。
+      @purchases.each do |purchase| 
+        if (this_month.include?(Date.parse(purchase[:created_at].to_s)))
+          @purchase_month += purchase[:price]
+        end
+      end
       
 
   end
