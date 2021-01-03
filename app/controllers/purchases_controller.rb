@@ -1,6 +1,14 @@
 class PurchasesController < ApplicationController
   def index
-
+    query = "SELECT *
+    FROM purchases
+    WHERE created_at >= CURRENT_DATE"
+    @result_today = Purchase.find_by_sql(query)
+    
+    
+    @result_today.each do |result| 
+      result.price
+    end 
   end
 
   def create

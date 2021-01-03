@@ -34,12 +34,15 @@
           <p class="result-month-title">今月</p>
           <p class="result-week-title">今週</p>
           <p class="result-day-title">今日</p>
+          <% @day_sum = 0 %>
+          <% @result_today.each do |result| %>
+            <% @day_sum += result.price %>
+          <% end %>
+           <p><%= @day_sum %>円</p>
           <p class="result-purchase-title">残り給与</p>
         </div>
       </div>      
-    </div>
-   
-      
+    </div>      
     </div>
   </div>
 </div>
