@@ -9,7 +9,8 @@ class Category < ActiveHash::Base
     { id: 7, name: '住まい' },
     { id: 8, name: '投資' },
     { id: 9, name: '自己投資' },
-    { id: 10, name: 'その他雑費' }
+    { id: 10, name: 'その他雑費' },
+    { id: 11, name: '無駄な雑費' }
   ]
  
 end
