@@ -23,6 +23,27 @@ class PurchasesController < ApplicationController
       end
     
       @balance_money = 200000 - @purchase_month   #給与の残額を取得
+
+    # １ヶ月の自己投資学の取得
+    investment_money = "SELECT * FROM purchases WHERE category_id = 9"
+    @investments = Purchase.find_by_sql(investment_money)
+    @investments_total = 0
+    @investments.each do |investment|
+      if (this_month.include?(Date.parse(investment[:created_at].to_s)))
+        @investments_total += investment[:price]
+      end
+    end
+
+    # １ヶ月の無駄遣い費の取得
+    waste_money = "SELECT * FROM purchases WHERE category_id = 11"
+    @wastes = Purchase.find_by_sql(waste_money)
+    @wastes_total = 0
+    @wastes.each do |waste|
+      if (this_month.include?(Date.parse(waste[:created_at].to_s)))
+        @wastes_total += waste[:price]
+      end
+    end
+
   end
 
   def create
