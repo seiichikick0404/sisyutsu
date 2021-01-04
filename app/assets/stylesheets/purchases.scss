@@ -155,5 +155,28 @@ html {
         }
       }
     }
+    & .result-form2 {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 658px;
+      height: 200px;
+      background-color:  $cWhite;
+      margin-top: 70px;
+
+      & .self-investment {
+
+      }
+
+      & .separate {
+        background-color: #e9edf4;
+        width: 1px;
+        height: 160px;
+      }
+
+      & .waste-money {
+
+      }
+    }
   } 
 }
