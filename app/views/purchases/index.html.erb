@@ -32,17 +32,17 @@
         <h1 class="result-title">今月の状況</h1>
         <div class="result-contents">
           <p class="result-month-title">今月</p>
-          <%= @purchase_month %>円
+           <p><%= @purchase_month %>円</p>
           <p class="result-week-title">今週</p>
-          <%= @purchase_week%>円
+          <p><%= @purchase_week%>円</p>
           <p class="result-day-title">今日</p>
           <% @day_sum = 0 %>
           <% @result_today.each do |result| %>
-            <% @day_sum += result.price %>
+            <P><% @day_sum += result.price %></p>
           <% end %>
            <p><%= @day_sum %>円</p>
           <p class="result-purchase-title">残り給与</p>
-          <%= @balance_money %>円
+          <p><%= @balance_money %>円</p>
         </div>
       </div>      
     </div>      

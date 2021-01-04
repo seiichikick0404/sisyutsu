@@ -114,6 +114,7 @@ html {
       background-color: $cWhite;
       margin-top: 50px;
       border-radius: 10px;
+      border: solid 1px rgb(235, 238, 240);
 
       & .result-title {
         margin: 28px 0 0 18px;
@@ -128,10 +129,12 @@ html {
         flex-direction: column;
         justify-content: space-between;
         margin: 30px 0 0 40px;
-        
-        
-
        
+
+        & p {
+          font-size: 36px;
+        }
+        
   
         & .result-month-title {
           font-size: 24px;
