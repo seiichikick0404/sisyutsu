@@ -50,6 +50,8 @@ class PurchasesController < ApplicationController
     @purchase = Purchase.new(purchase_params)
     if @purchase.save
       redirect_to root_path
+    else 
+      render action: new
     end
   end
 
