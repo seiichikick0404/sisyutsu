@@ -58,6 +58,15 @@
       </div> 
       <div class="result-form3">
        <h1>今月の出費一覧</h1>
+       <div class="purchase-item-box">
+        <% this_month = Date.today.all_month  %>
+        <% @purchases.each do |purchase| %>
+          <% if (this_month.include?(Date.parse(purchase[:created_at].to_s))) %>
+            <p><%= purchase.text %></p>
+          <% end %>
+        <% end %>
+         
+       </div>
       </div>     
     </div>      
     </div>
