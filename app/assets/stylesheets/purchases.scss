@@ -160,7 +160,7 @@ html {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      width: 658px;
+      width: 705px;
       height: 200px;
       background-color:  $cWhite;
       margin-top: 70px;
@@ -190,10 +190,35 @@ html {
     }
 
     & .result-form3 {
+      padding: 30px;
       margin-top: 70px;
-      height: 100%;
-      width: 660px;
+      width: 645px;
       background-color: $cWhite;
+
+      & h1 {
+        font-size: 25px;
+      }
+
+      & .purchase-item-box {
+
+
+        & .item-list {
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 7px;
+  
+          & .item-name {
+            font-size: 20px;
+  
+          }
+  
+          & .item-price {
+            font-size: 20px;
+  
+          }
+        }
+      }
     }
   } 
 }
